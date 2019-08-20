@@ -1,16 +1,23 @@
-#include <iostream>
+	#include <iostream>
+	#include<string>
+	using namespace std;
 
-int main(int argc, char** argv) {
+ int main () {
 	
-	struct Tabeladedados
-	{
-		String nome [ruy cerqueira, gabriel knight, pedro malaquao];
-		String edereco [Rua,Bairro,Complemento,CEP,Cidade,UF];
-		int Telefone [ tel1,tel2,tel3];
-	}
+	struct tabeladedados{
+	
+	
+		string nome;
+		string endereco;
+		int Telefone;
+};
 
-	
+struct tabeladedados tabela_info;
+
+tabela_info.nome="Ruy cerqueira", "Gabriel Knight", "Pedro Malaquoao";
+tabela_info.endereco="R.bonifacio N°44 Guarany APTO°101 CEP:21332-370 Rio de janeiro RJ", "Av.castelo branco N°12 Monte CEP:54332-237 Salgado ES", "R.14 BIS N°5 Centro ED.bastos CEP:12003-010 Manaura AM";
+tabela_info.Telefone=21-4527-2327,37 32321010, 8954478700;
+
 	return 0;
-	
 	
 }
