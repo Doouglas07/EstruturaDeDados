@@ -1,0 +1,16 @@
+#include <iostream>
+
+int main(int argc, char** argv) {
+	
+	struct Tabeladedados
+	{
+		String nome [ruy cerqueira, gabriel knight, pedro malaquao];
+		String edereco [Rua,Bairro,Complemento,CEP,Cidade,UF];
+		int Telefone [ tel1,tel2,tel3];
+	}
+
+	
+	return 0;
+	
+	
+}
