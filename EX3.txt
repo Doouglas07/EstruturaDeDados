@@ -1,27 +1,47 @@
-#include <iostream>
-#include<string>
+#include <string.h>
 using namespace std;
 
- int main () {
-	
-    int total = 8;
-    float valores[total]; 
+struct Bandasdemusicas
+    {
+        string nome;
+        string genero;
+        int ranking;
+        int integrantes;
+    };
 
-    cout << "Digite 8 números:" << endl;
+int main()
+{
+    Bandasdemusicas  banda[5];
 
-    for (int i = 0; i < TAM; i++)	//percorre os vetores
-    { 
-        cin >> valores[i];
+    for(int i = 0; i < 5; i++){
+	        
+        cout << "Digite o nome: ";
+        cin >> banda[i].nome;
+        cout << "Digite o genero:";
+        cin >> banda[i].genero;
+        cout << "Digite a posicao no ranking: ";
+        cin >> banda[i].ranking;
+        cout << "Digite a quantidade de integrantes:";
+        cin >> banda[i].integrantes;
+    }   
+    
+    
+    for (int i = 1; i < 5; i++)
+    {
+        for (int C = 0; C < 5; C++)
+        {
+            if (banda[C].ranking == i)
+            {
+                cout << "Ranking: " << banda[j].ranking << endl;
+                cout << "Genero: " << banda[j].genero << endl;
+				cout << "Nome: " << banda[j].nome << endl;
+                cout << "integrantes: " << banda[j].integrantes << endl;
+
+                cout << endl;
+                
+            }
+        }
     }
 
-    cout << "Escolha 2 números entre 0 a 7?" << endl;
-    cin >> x;
-    cin >> y;
-
-    cout << "A soma dos valores: " << valores[x] + valores[y] << endl;
-
-
     return 0;
-}
-	
 }

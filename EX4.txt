@@ -1,21 +1,74 @@
 #include <iostream>
-#include<string>
+#include <string.h>
+
 using namespace std;
 
 int main()
 {
-    int total= 10;
-    float valor[total]; 
 
-    for (int i = 0; i < total; i++){ 
-        cin >> valor[i];
-        if (valor[i] < 0)
-            valor[i] = 0;
+    struct Alunos
+    {
+        string nome;
+        string curso;
+        int periodo;
+        string disciplinas[4];
+        float notas[3];
+    };
+    int total = 2;
+    Alunos aluno [total];
+
+    for (int i = 0; i <total; i++)
+    {
+        cout << "Digite o Nome:";
+        cin >> aluno[i].nome;
+        cout << "Digite o Curso:";
+        cin >> aluno[i].curso;
+        cout << "Digite o Período:";
+        cin >> aluno[i].periodo;
+        
+		cout << "Digite 4 disciplinas: ";
+        
+		for (int j = 0; j < 4; j++)
+        {
+            cout << "Disciplinas:";
+            cin >> aluno[i].disciplinas[j];
+        }
+        cout << "Digite a Nota da AV1: ";
+        cin >> aluno[i].notas[0];
+        cout << "Digite a Nota da AV2: ";
+        cin >> aluno[i].notas[1];
+        cout << "Digite a Nota da AV3: ";
+        cin >> aluno[i].notas[2];
     }
 
-    for (int i = 0; i < total; i++) { 
+    for (int i = 0; i < total; i++)
+    {
+        cout << "Aluno: " <<aluno[i].nome << endl;
+        cout << "Curso: " <<aluno[i].curso << endl;
+        cout << "Periodo:" << aluno[i].periodo << endl;
 
-        cout << valor[i] << endl;
+        for (int j = 0; j < 4; j++)
+        {
+            cout << "Disciplina:" << j + 1 << ": " << aluno[i].disciplinas[j] << endl;
+        }
+
+        float media = 0; 
+
+        if (aluno[i].notas[0] > aluno[i].notas[1] && aluno[i].notas[2] > aluno[i].notas[1])
+        { 
+            media = (aluno[i].notas[0] + aluno[i].notas[2]) / 2;
+        }
+        else if (aluno[i].notas[0] > aluno[i].notas[2] && aluno[i].notas[1] > aluno[i].notas[2])
+        {
+            media = (aluno[i].notas[0] + aluno[i].notas[1]) / 2;
+        }
+        else
+        { 
+            media = (aluno[i].notas[1] + aluno[i].notas[2]) / 2;
+        }
+
+        cout << "A média do Aluno é = " << media << endl;
+        cout << endl;
     }
 
     return 0;
