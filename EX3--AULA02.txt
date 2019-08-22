@@ -1,0 +1,47 @@
+#include <string.h>
+using namespace std;
+
+struct Bandasdemusicas
+    {
+        string nome;
+        string genero;
+        int ranking;
+        int integrantes;
+    };
+
+int main()
+{
+    Bandasdemusicas  banda[5];
+
+    for(int i = 0; i < 5; i++){
+	        
+        cout << "Digite o nome: ";
+        cin >> banda[i].nome;
+        cout << "Digite o genero:";
+        cin >> banda[i].genero;
+        cout << "Digite a posicao no ranking: ";
+        cin >> banda[i].ranking;
+        cout << "Digite a quantidade de integrantes:";
+        cin >> banda[i].integrantes;
+    }   
+    
+    
+    for (int i = 1; i < 5; i++)
+    {
+        for (int C = 0; C < 5; C++)
+        {
+            if (banda[C].ranking == i)
+            {
+                cout << "Ranking: " << banda[j].ranking << endl;
+                cout << "Genero: " << banda[j].genero << endl;
+				cout << "Nome: " << banda[j].nome << endl;
+                cout << "integrantes: " << banda[j].integrantes << endl;
+
+                cout << endl;
+                
+            }
+        }
+    }
+
+    return 0;
+}

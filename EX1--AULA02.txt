@@ -1,0 +1,16 @@
+#include <iostream>
+
+int main(int argc, char** argv) {
+	
+	struct bandas de musica
+	{
+		String nome;
+		String tipo;
+		int numIntegrantes;
+		int posicao
+	}
+
+	return 0;
+	
+	
+}
