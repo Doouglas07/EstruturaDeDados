@@ -1,21 +1,25 @@
 #include <iostream>
-#include <iostream>
-#include <string.h>
-
 using namespace std;
 
-int main()
+int main(int argc, char** argv) 
 {
-    struct Endereco
-    {
-        string nome;
-        string rua;
-        int numero;
-        string bairro;  
-        string complemento;
-        string CEP;
-        string cidade;
-        string UF;
-        int telefone[3];
-    };
+	int total=6;
+	float valores[6];
+	
+	cout<< ("digite 6 valores:");
+	
+	for(int i=0;i<total;i++)
+	{
+	
+		cin>> valores[i];
+	}
+	
+	for (int i=0; i<total; i++)
+	{
+		cout<< ("números digitados:" , valores[i]);
+	}
+	
+	
+
+	return 0;
 }
