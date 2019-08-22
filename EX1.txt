@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+	float nota[3];
+	float media;
+	
+	for(int i=0;i<media;i++)
+	{
+		cout<< ("digite as 3 notas da av");
+		cin>> nota[i];
+	}
+	
+	if (nota[0]>nota[1] && nota[1]> nota[2])
+	//nota 2 é a menor 
+	{
+		media=nota[0]/nota[1];	
+		cout<< ("Media:", media);	
+	}
+
+	else if ( nota[1]>nota[0] && nota[2]>nota[0])  
+	// nota 0 é a menor 
+		{
+			media=nota[1]/nota[2];
+			cout << ("Media:", media);
+		}
+		
+	else {
+	// nota 1 é a menor 
+	media=nota[2]/nota[1];
+	cout << ("Media:", media);
+}
+	
+
+	return 0;
+}
