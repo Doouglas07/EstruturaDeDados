@@ -1,0 +1,27 @@
+#include <iostream>
+
+void ParOuImpar (int num){
+
+cout<< "informe o número?";
+cin>> num; 
+
+	if (num % 2==0){
+	cout<<"O número é par";	
+}
+
+	else {
+	cout<< "O numero é impar"
+	}	
+
+}
+
+int main(int argc, char** argv) {
+	
+int num;
+
+ParouImpar(2);
+
+
+	return 0;
+	
+}

@@ -1,0 +1,31 @@
+#include <iostream>
+
+void MaiordeDois (int a,int b,int c){
+
+cout<< "informe os números?";
+cin>> a;
+cin>>b;
+
+
+
+	if (a>b && a>c){
+cout<< "O maior é:"<<a;	
+}
+
+	else if (b>a && b>c){
+cout<< "O maior é:"<< b;
+}
+
+
+}
+
+int main(int argc, char** argv) {
+	
+int num;
+
+MaiordeDois(5,7);
+
+
+	return 0;
+	
+}

@@ -1,0 +1,80 @@
+#include <iostream>
+
+void SOMA (float a, int b){
+	
+	float resultado;
+	
+	resultado=a+b;	
+	cout << "O valor da Soma é :" << resultado;
+}
+void SUBTRAIR (float a , int b){
+	
+	float resultado;
+	
+	resultado=a-b;	
+	cout << "O valor da Subtração é :" << resultado;
+}
+
+void DIVIDIR (float a, int b){
+	
+	float resultado;
+	
+	resultado=a/b;	
+	cout << "O valor da divisão é :", resultado ;
+	
+}
+
+void MULTIPLICAR (float a, int b){
+	
+	float resultado;
+	
+	resultado=a*b;
+	cout<< "O valor da Multiplicacao é:", resultado;
+}
+
+int main(int argc, char** argv) {
+	
+	int OP;
+			cout<< ("====== Calculadora ======");
+		
+			cout<< ("1 - Somar");
+			cout<< ("2 - Subtrair");
+			cout<< ("3 - Divisão");
+			cout<< ("4 - Multiplicação");
+	
+	cin>> OP;
+	
+	if (OP==1){
+	
+	a=2.7
+	b=4;
+		
+	SOMA(a,b);		
+}
+	else if (OP==2){
+	
+	a=2.7;
+	b=4;
+	
+	SUBTRAIR(a,b)
+}
+	
+	else if (OP==3){
+		
+	a=2.7;
+	b=4;
+	
+	DIVIDIR(a,b)		
+	}
+
+	else (OP==4){
+		
+	a=2.7
+	b=4;
+	
+	MULTIPLICAR(a,b);	
+	}
+	
+	return 0;
+	
+}
